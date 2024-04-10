@@ -1,0 +1,1354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Css cho toàn bộ nội dung*/
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: #40cd58;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    display: flex;
+}
+
+/* Css dành cho header */
+
+.love ul li a {
+    color: white;
+    font-size: 28px;
+}
+
+.love ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 18px;
+}
+
+.love {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+/* Css 2 cái biểu tượng
+    dòng 24 để bỏ dấu . đầu list
+    dòng 25 để tụi nó ở trong 1 hàng
+    dòng 29 để di chuyển nó */
+
+
+.login {
+    position: absolute;
+    right: 181px;
+    top: 35px;
+}
+
+#signup,
+#signin {
+    cursor: pointer;
+}
+
+.login ul li {
+    display: inline-block;
+    padding-right: 2px;
+}
+
+.login ul li a {
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.login1 {
+    color: white;
+    font-size: 21px;
+    padding: 0px;
+}
+
+/*  Css Đăng nhập|Đăng ký */
+
+.login1 a:hover {
+    color: #5edd55;
+}
+
+.love ul li a:hover {
+    color: #d0e4d1;
+}
+
+/* 65-70 để nó có hiệu ứng chuyển màu khi mình di chuột vào */
+
+.search {
+    float: left;
+    margin-left: 25px;
+    top: 30px;
+    display: flex;
+    height: 42px;
+    background-color: #f0f0f0;
+    border: 2px solid white;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    left: 0;
+}
+
+#search-bar {
+    width: 300px;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    width: 15%;
+    height: 100%;
+    background-color: #31c23a;
+    color: white;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #64de45;
+}
+
+/* Css dành cho cái thanh tìm kiếm */
+
+.logo img {
+    margin: 100%;
+}
+
+
+/* Css dành cho Logo để nó ở giữa */
+
+
+
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.menu ul {
+    float: left;
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.danhmuc1 {
+    background-color: #5edf44;
+    padding: 9px;
+    font-weight: bold;
+    color: white;
+}
+
+.danhmuc2 a:hover {
+    color: #4ada45;
+}
+
+.danhmuc3 a:hover {
+    color: #52d13f;
+}
+
+.danhmuc1 {
+    position: relative;
+}
+
+.danhmucbe {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 204.86px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.danhmuc:hover .danhmucbe {
+    display: block;
+}
+
+.mucbe {
+    display: block;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mucbe:hover {
+    background-color: #ddd;
+}
+
+/* Css thanh menu */
+
+.footer {
+    margin-top: 50px;
+    top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bang {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.l1 li, .l2 li, .l3 li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.l1 li a, .l2 li a, .l3 li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.l1 ul li a:hover, .l2 ul li a:hover {
+    color: rgb(66, 221, 108);
+}
+
+/* Title phần footer */
+h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.l4 ul {
+    display: flex;
+    list-style: none;
+}
+
+.l4 ul li {
+    padding-right: 15px;
+}
+
+.l4 ul li a {
+    font-size: 30px;
+    padding: 1px;
+    color: black;
+}
+/*  Xếp các table lại rồi điều chỉnh vị trí */
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.exit {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+
+.dangky {
+    display: none;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2;
+
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 27px;
+
+}
+
+input {
+    width: 340px;
+    height: 40px;
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    transition: border-width 0.3s;
+}
+
+#login-button {
+    background-color: #42cb36;
+    color: white;
+    width: 340px;
+    height: 40px;
+    border-radius: 3px 3px 3px 3px;
+    border: 0px;
+    cursor: pointer;
+}
+
+h4 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.new {
+    display: flex;
+    font-size: 15px;
+    margin-left: 89px;
+}
+
+.dn {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    margin-left: 5px;
+    color: #4fce41;
+    cursor: pointer;
+}
+
+
+
+.slider {
+    width: 100vw;
+    max-width: 100vw;
+    aspect-ratio: 2.47741935484;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 40px;
+    height: 40px;
+    background-color: #34ce2f;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+.exit1 {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 20px;
+}
+
+.dangnhap {
+    display: none;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    z-index: 2;
+    background-color: white;
+}
+
+.form-group1 {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 27px;
+
+}
+
+.dangnhap input {
+    width: 340px;
+    height: 40px;
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    transition: border-width 0.3s;
+}
+
+#login-button1 {
+    background-color: #43d539;
+    color: white;
+    width: 340px;
+    height: 40px;
+    border-radius: 3px 3px 3px 3px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.dangnhap h4 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.new1 {
+    display: flex;
+    font-size: 15px;
+    margin-left: 98px;
+}
+
+.dk {
+    margin-left: 5px;
+    color: #3fdc46;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.exit,
+.exit1 {
+    cursor: pointer;
+}
+
+
+#productInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productInfo div {
+    width: fit-content;
+    height: 384px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 12px;
+}
+
+#productInfo .img-content {
+    width: 193.2px;
+    height: 300px;
+    border-radius: 4px;
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+#productInfo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh nằm đầy đủ trong container */
+    object-position: center center;
+    /* Canh chỉnh hình ảnh giữa container */
+}
+
+#productInfo p {
+    width: 197px;
+    height: 38px;
+    margin-top: 0px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    font-size: 15.5px;
+}
+
+#productInfo strong {
+    color: #62d642;
+    position: relative;
+    float: right;
+    margin-right: 6px;
+}
+
+#productInfo div:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+    /* Thêm box-shadow ở đây */
+}
+
+.main {
+    margin: 0 auto;
+    width: 1030px;
+}
+
+#p-main {
+    font-size: 25px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+    margin-top: 18px;
+}
+
+
+.menu-admin {
+    position: absolute;
+    right: 180px;
+}
+
+.danhmuc1-admin {
+    background-color: #2dcf40;
+    padding: 9px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+    width: fit-content;
+    height: 41px;
+}
+
+.danhmucbe-admin {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: inherit;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.danhmuc-admin:hover .danhmucbe-admin {
+    display: block;
+}
+
+.mucbe-admin li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.mucbe-admin {
+    display: block;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mucbe-admin:hover {
+    background-color: #ddd;
+}
+
+.menu-admin ul li {
+    list-style: none;
+}
+
+.menu-admin ul li button {
+    border: none;
+    width: 131.67px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.dxbutton-admin {
+    border: none;
+    font-size: 15px;
+    height: 35px;
+    width: 134.67px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dxbutton-admin:hover {
+    color: #47cc36;
+    font-weight: bold;
+}
+
+.themsp {
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2;
+    background-color: white;
+}
+
+.themsp input {
+    width: 340px;
+    height: 40px;
+    padding: 12px;
+    margin-left: 29px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    transition: border-width 0.3s;
+    font-size: 15px;
+}
+
+.themsp h4 {
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#productdanhmuc {
+    border: 1px solid #ccc;
+    width: 340px;
+    height: 40px;
+    margin-bottom: 22px;
+    margin-left: 29px;
+}
+
+#themsp button {
+    background-color: #3ad049;
+    color: white;
+    width: 340px;
+    height: 40px;
+    border-radius: 3px 3px 3px 3px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 12px;
+    margin-left: 29px;
+}
+
+.themsp-exit {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#showImage {
+    margin-left: 28px;
+    margin-bottom: 20px;
+}
+
+/*  Xếp các table lại rồi điều chỉnh vị trí */
+
+.sanpham {
+    position: relative;
+    left: 40px;
+    width: 192px;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#gia {
+    margin-top: 3px;
+    color: #040704;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: right;
+}
+
+#ten {
+    font-size: 15px;
+}
+
+.sanpham:hover {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+#ten:hover {
+    color: #040804;
+}
+
+#imageInput {
+    padding-top: 7px;
+}
+
+#danhmucsp {
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+.sort-buttons button {
+    margin-left: 8px;
+    font-size: 15px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#pagination {
+    text-align: center;
+    position: inherit;
+    right: 52px;
+    top: 12px;
+    margin-bottom: 40px;
+
+}
+
+.current-page {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #7ddc47;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+
+#prevPage,
+#nextPage {
+    position: absolute;
+}
+
+#pagination button:not(.current-page) {
+    margin: 5px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+
+
+.menu-user {
+    position: absolute;
+    right: 180px;
+}
+
+.danhmuc1-user {
+    background-color: #2cd22f;
+    padding: 9px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+    width: fit-content;
+    height: 41px;
+}
+
+.danhmucbe-user {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: inherit;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.danhmuc-user:hover .danhmucbe-user {
+    display: block;
+}
+
+.mucbe-user li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.mucbe-user {
+    display: block;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mucbe-user:hover {
+    background-color: #ddd;
+}
+
+.menu-user ul li {
+    list-style: none;
+}
+
+.menu-user ul li button {
+    border: none;
+    width: 150.67px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.dxbutton-user {
+    border: none;
+    font-size: 15px;
+    height: 35px;
+    width: 134.67px;
+    background-color: white;
+    cursor: pointer;
+}
+.dxbutton-user:hover {
+    color: #42c531;
+    font-weight: bold;
+}
+.cart {
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    width: 1220px;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid rgba(214, 194, 194, 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 12px;
+    margin: 0 auto;
+    top: 70px;
+}
+
+.cart #img-cart {
+    width: 98.39px;
+    height: 150px;
+    margin: 5px;
+    padding: 1px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cart #img-cart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh nằm đầy đủ trong container */
+    object-position: center center;
+    /* Canh chỉnh hình ảnh giữa container */
+}
+
+
+.cart div:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+    /* Thêm box-shadow ở đây */
+}
+
+.cart-item-name{
+    padding: 10px;
+    padding-top: 65px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    font-size: 15.5px;
+    margin: 5px;
+    width: 527px;
+    height: 150px;
+}
+
+.cart-item-price{
+    width: 120px;
+    padding: 10px;
+    padding-top: 65px;
+    text-align: center;
+    color: #33d436;
+    margin: 5px;
+    overflow-x: scroll;
+    margin-right: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart-item-quantity{
+    width: 120px;
+    padding: 10px;
+    padding-top: 65px;
+    text-align: center;
+    margin: 5px;
+    overflow-x: scroll;
+    margin-right: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart-item-total{
+    width: 120px;
+    padding: 5px;
+    padding-top: 65px;
+    text-align: center;
+    margin: 5px;
+    overflow-x: scroll;
+    margin-right: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+    /* Thêm box-shadow ở đây */
+}
+
+.remove-item-button{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    top: 60px;
+    margin-right: 5px;
+}
+
+#giohang{
+    position: relative;
+    left: -350px;
+    top: 65px;
+    font-size: 30px;
+    border-bottom: 1px solid rgb(12, 2, 2);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+strong{
+    position: relative;
+    left: 1395px;
+    top: 80px;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+
+#empty{
+    position: relative;
+    left: 350px;
+    top: 250px;
+    font-size: 60px;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+
+.check{
+    position: relative;
+    top: -330px;
+    border: 1px solid black;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    width: 365px;
+    z-index: 2;
+}
+
+#checkoutForm{
+    display: block;
+}
+
+.check p{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+#checkoutForm input{
+    margin-bottom: 15px;
+    margin-left: 12px;
+}
+
+#out{
+    position: absolute;
+    left: 347px;
+    top: 0px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px
+}
+
+#pay{
+    width: 340px;
+    height: 40px;
+    background-color:#3cd13a;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+
+.thanhtoan{
+    width: 240px;
+    height: 40px;
+    background-color:#ce0b0b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    font-weight: 500;
+    border-radius: 3px;
+    left: 1150px;
+    bottom: -130px;
+}
+
+@media screen and (max-width: 1600px){
+    #empty{
+        display: none !important;
+    }
+
+    .thanhtoan{
+        width: 240px;
+        height: 40px;
+        background-color:#ba0d0d;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        position: relative;
+        font-weight: 500;
+        border-radius: 3px;
+        left: 828px !important;
+        bottom: -118px !important;
+    }
+
+    strong{
+        position: relative;
+        left: 1080px !important;
+        top: 80px;
+        font-size: 30px;
+        border-bottom: 1px solid black;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #empty{
+        display: none !important;
+    }
+
+    .danhmuc1-user{
+        right: -160px;
+    }
+    .danhmucbe-user{
+        right: -160px;
+    }
+
+    .love{
+        display: none;
+    }
+    .search{
+        width: 220px;
+    }
+    #search-bar{
+        width: 180px;
+        padding-right: 10px;
+    }
+    #search-button{
+        width: 40px;
+        height: 100%;
+    }
+
+    .cart-item-quantity{
+       display: none;
+    }
+    .cart {
+        justify-content:flex-end;
+        position: relative;
+        display: flex;
+        width: 500px !important;
+        height: fit-content;
+        border-radius: 8px;
+        background-color: #fff;
+        border: 2px solid rgba(214, 194, 194, 0.1);
+        cursor: pointer;
+        transition: 0.5s;
+        margin: 12px;
+        margin: 0 auto;
+        top: 70px;
+    }
+
+    .cart-item-name{
+        display: none;
+    }
+
+    .login{
+        right: 20px;
+    }
+
+    .danhmuc2 a{
+        display: none;
+    }
+    .danhmuc3 a{
+        display: none;
+    }
+
+    .bang1 .l1 ul li,
+    .bang2 .l2 ul li,
+    .bang3 .l3 ul li {
+        font-size: 18px;
+        word-wrap: break-word;
+        white-space: nowrap;
+    }
+
+    strong {
+        left: 464px !important;
+    }
+
+    .thanhtoan {
+        left: 211px !important;
+    }
+
+    #giohang {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bang1 .l1 ul li,
+    .bang2 .l2 ul li,
+    .bang3 .l3 ul li {
+        font-size: 14px;
+    }
+
+    strong {
+        left: 355px !important;
+    }
+
+    .thanhtoan {
+        left: 105px !important;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .search{
+        width: 220px;
+    }
+    #search-bar{
+        width: 180px;
+        padding-right: 10px;
+    }
+    #search-button{
+        width: 40px;
+        height: 100%;
+    }
+    .login{
+        right: 10px;
+    }
+
+    .danhmuc2 a{
+        display: none;
+    }
+    .danhmuc3 a{
+        display: none;
+    }
+
+    .bang{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bang1, .bang2, .bang3, .bang4 {
+        width: 48vw;
+    }
+
+    strong {
+        left: 323px !important;
+        font-size: 26px;
+    }
+
+    .thanhtoan {
+        left: 118px !important;
+        height: 30px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logo {
+        display: none;
+    }
+
+    .login {
+        right: 10px;
+    }
+
+    .login1 {
+        font-size: 18px;
+    }
+
+    .footer ul li a{
+        font-size: 18px;
+    }
+    .footer ul li i{
+        font-size: 28px;
+    }
+    .danhmuc1-user{
+        right: -190px;
+    }
+    .danhmucbe-user{
+        right: -190px;
+    }
+
+    strong {
+        left: 250px !important;
+        font-size: 26px;
+    }
+
+    .thanhtoan {
+        left: 50px !important;
+        height: 30px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .love{
+        display: none;
+    }
+    .search{
+        width: 162px;
+    }
+    #search-bar{
+        width: 125px;
+        padding-right: 10px;
+    }
+    #search-button{
+        width: 40px;
+        height: 100%;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .login{
+        right: 30px;
+    }
+
+    .login ul li a{
+        font-size: 18px;
+    }
+
+    .login1{
+        font-size: 18px;
+    }
+
+    .danhmuc2 a{
+        display: none;
+    }
+    .danhmuc3 a{
+        display: none;
+    }
+
+    .bang {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .bang1 .l1 ul li, .bang2 .l2 ul li, .bang3 .l3 ul li, .bang4 {
+        font-size: 20px;
+    }
+
+    .cart-item-price {
+        display: none;
+    }
+    
+    strong {
+        left: 180px !important;
+        font-size: 23px;
+    }
+
+    .thanhtoan {
+        left: -14px !important;
+        height: 30px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bang1, .bang2, .bang3, .bang4 {
+        margin-top: 20px;
+    }
+
+    .bang1 .l1 ul li, .bang2 .l2 ul li, .bang3 .l3 ul li, .bang4 {
+        font-size: 16px;
+    }
+
+    .menu ul .danhmuc .danhmuc1{
+        font-size: 12px;
+    }
+}

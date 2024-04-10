@@ -1,0 +1,155 @@
+body{
+    font-family: arial;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+
+}
+.product-items{
+    border: 1px solid #fff;
+    padding: 30px;
+}
+.product-item{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    line-height: 26px;
+    height: 450px;
+  
+}
+.product-item label{
+    font-weight: bold;
+}
+.product-item p{
+    margin: 0;
+    line-height: 26px;
+    max-height: 52px;
+    overflow: hidden;
+}
+.product-price{
+    color: red;
+    font-weight: bold;
+}
+.product-img{
+    padding: 10px;
+
+    margin-bottom: 5px;
+}
+.product-item img{
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+    width:300px;
+    height:150px;
+}
+
+
+.product-item ul{
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+.product-item ul li{
+    float: left;
+    width: 33.3333%;
+    list-style: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: 0;
+    box-sizing: border-box;
+}
+.clear-both{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+.buy-button{
+    text-align: right;
+    margin-top: 10px;
+}
+.buy-button a{
+    background: #444;
+    padding: 5px;
+    color: #fff;
+}
+#pagination{
+    text-align: right;
+    margin-top: 15px;
+}
+.page-item{
+    border: 1px solid #ccc;
+    padding: 5px 9px;
+    color: #000;
+}
+.current-page{
+    background: #000;
+    color: #FFF;
+}
+#wrapper-product{
+    border: 1px solid #ccc;
+}
+#product-search{
+    margin: 0 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+#sort-box{
+    float: right;
+    margin-right: 45px;
+    line-height: 24px;
+    height: 24px;
+}
+#ajax-cart{
+    width: 1300px;
+}
+#cart-icon{
+    position: fixed;
+    top: 30%;
+    right: 0;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#menu .containers{
+   top: 0;
+   left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+#menu ul{
+    
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    background: url(../images/menu-bg.jpg) repeat-x;
+    border: 1px solid #c8d9c8;
+ 
+}
+#menu ul li{
+    padding: 0 15px;
+    list-style: none;
+    float: left;
+    margin: 15px 30px;
+  
+    border-left: 1px solid #cfc8bc;
+}
+#menu ul li:first-child{
+    border-left: 0;
+}
+#menu ul li a{
+    color: #444444;
+    font-size: 24px;
+}
+#menu ul li.clear-both{
+    float: none;
+}
